@@ -12,6 +12,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.FileWriter;
@@ -185,7 +187,7 @@ public void initialize(URL url, ResourceBundle resourceBundle) {
  * This is a refresh method. This method checks the location of the computer running the application.
  * If the location is English, it loads English.  If the location is France, it loads French.
  *
- * @param locale loads location resources on load.
+ * @param locale         loads location resources on load.
  * @param resourceBundle
  */
 
@@ -230,4 +232,5 @@ public void loginExitButton(ActionEvent actionEvent) {
         }
     });
 }
+
 }
