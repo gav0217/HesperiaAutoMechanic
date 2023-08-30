@@ -214,6 +214,9 @@ public static Appointment getNextAppointment(Date timeNow, int User_ID) throws S
     while (rs.next()) {
         appointment.setAppointment_ID(rs.getInt("Appointment_ID"));
         appointment.setTitle(rs.getString("Title"));
+        appointment.setDescription(rs.getString("Description"));
+        appointment.setLocation(rs.getString("Location"));
+        appointment.setType(rs.getString("Type"));
         appointment.setStart(Utils.getLocalTimeFromTimestamp(rs.getTimestamp("Start")));
         appointment.setEnd(Utils.getLocalTimeFromTimestamp(rs.getTimestamp("End")));
     }

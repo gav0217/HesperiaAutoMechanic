@@ -198,10 +198,10 @@ public void initialize(URL url, ResourceBundle resourceBundle) {
             }
         });
 
-        addAppointmentStartTime.setItems(Utils.getTime(9, 16));
-        var endTime = Utils.getTime(9, 16);
+        addAppointmentStartTime.setItems(Utils.getTime(5, 21));
+        var endTime = Utils.getTime(5, 21);
         endTime.remove(0);
-        endTime.add("17:00");
+        endTime.add("22:00");
         addAppointmentEndTime.setItems(endTime);
 
 

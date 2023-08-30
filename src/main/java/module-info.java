@@ -2,6 +2,7 @@ module com.example.HesperiaAutoMechanic {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires junit;
 
 
     opens com.example.hesperiaautomechanic to javafx.fxml;

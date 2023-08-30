@@ -271,10 +271,10 @@ public void setAppointment(Appointment _appointment) {
     editAppointmentStartDate.setValue(appointment.getStart().toLocalDate());
     editAppointmentEndDate.setValue(appointment.getEnd().toLocalDate());
     String stime = String.format("%02d", appointment.getStart().getHour()) + ":" + String.format("%02d", appointment.getStart().getMinute());
-    editAppointmentStartTime.setItems(Utils.getTime(9, 16));
-    var endTime = Utils.getTime(9, 16);
+    editAppointmentStartTime.setItems(Utils.getTime(5, 21));
+    var endTime = Utils.getTime(5, 21);
     endTime.remove(0);
-    endTime.add("17:00");
+    endTime.add("22:00");
     editAppointmentEndTime.setItems(endTime);
 
     editAppointmentStartTime.getSelectionModel().select(stime);

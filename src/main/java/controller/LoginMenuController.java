@@ -28,6 +28,9 @@ import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
+
+
+
 /**
  * This is the login controller class. This class logs the user into the application. When the user
  * enters a valid username and password, it is verified against the database.  If it verifies it logs the user in, if not, it lets
@@ -205,7 +208,7 @@ public void RefreshLanguage(Locale locale, ResourceBundle resourceBundle) {
 }
 
 /**
- * This is an exit method. This method exits ask and confirms if the user wants to exit the application.
+ * This is an exit method. This method exits ask and confirm if the user wants to exit the application.
  * If the user clicks on the no, it does not terminate, but if they click yes, it terminates the application.
  *
  * @param actionEvent click on the exit button.
